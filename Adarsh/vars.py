@@ -15,7 +15,7 @@ class Var(object):
     SESSION_NAME = str(getenv('SESSION_NAME', 'rxmovies'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001654008278'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001660274107'))
     PORT = int(getenv('PORT', 8080))
     CAPTION_POSITION = os.environ.get("CAPTION_POSITION", "BOTTOM")
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
