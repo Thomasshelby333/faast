@@ -20,7 +20,7 @@ class Var(object):
     CAPTION_POSITION = os.environ.get("CAPTION_POSITION", "BOTTOM")
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5296610774").split())  
+    OWNER_ID = int(getenv('OWNER_ID', '5296610774'))  
     NO_PORT = bool(getenv('NO_PORT', False))
     SHORTENER_API = str(getenv('SHORTENER_API', 'b6aace46d40c605fff8e0cafbcd8fbe416851f4d'))
     SHORTENER_WEBSITE = str(getenv('SHORTENER_WEBSITE', 'tnlink.in'))
