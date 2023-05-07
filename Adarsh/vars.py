@@ -9,9 +9,9 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '14505719'))
-    API_HASH = str(getenv('API_HASH', '620f0a2aa2cd1474a4953619b3e3643d'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', 'BOT_TOKEN'))
+    API_ID = int(getenv('API_ID', '29298365'))
+    API_HASH = str(getenv('API_HASH', '42b78a9d8ce34846d9aa8fe117680d1d'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '5452246619:AAGKiC93aq4WiHn4IyVfA2PpR05X2hdIKbY'))
     SESSION_NAME = str(getenv('SESSION_NAME', 'rxmoviesdaa'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -40,6 +40,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', "DATABASE_URI"))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', "@RolexMoviesOXO"))
+    DATABASE_URL = str(getenv('DATABASE_URL', "mongodb+srv://Gowtham:sakthi024@cluster0.tmnwrwb.mongodb.net/?retryWrites=true&w=majority"))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', "RolexMoviesOXO"))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
